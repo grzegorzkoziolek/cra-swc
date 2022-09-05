@@ -1,0 +1,46 @@
+{
+  "jsc": {
+    "module": {
+      "type": "commonjs",
+
+      // These are defaults.
+      "strict": true,
+      "strictMode": true,
+      "lazy": true,
+      "noInterop": false
+    },
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": true,
+      "dynamicImport": true,
+      "privateMethod": true,
+      "functionBind": false,
+      "exportDefaultFrom": false,
+      "exportNamespaceFrom": false,
+      "decoratorsBeforeExport": false,
+      "topLevelAwait": false,
+      "importMeta": false,
+      "preserveAllComments": false
+    },
+    "target": "es2019"
+  },
+  "transform": {
+    "react": {
+      "pragma": "React.createElement",
+      "pragmaFrag": "React.Fragment",
+      "throwIfNamespace": true,
+      "development": false,
+      "useBuiltins": false
+    },
+    "optimizer": {
+      "globals": {
+        "vars": {
+          "__DEBUG__": "true"
+        }
+      }
+    }
+  },
+  "sourceMaps": true,
+  "inlineSourcesContent": true
+}
